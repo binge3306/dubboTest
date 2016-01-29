@@ -14,7 +14,7 @@ public class UserService implements IUserService{
 		User u =new User();
 		u.setId(1l);
 		u.setName("测试");
-		List<User> list = new ArrayList<>();
+		List<User> list = new ArrayList<User>();
 		list.add(u);
 		return list;
 	}

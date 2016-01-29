@@ -5,6 +5,29 @@
 	<groupId>DubboTest</groupId>
 	<artifactId>DubboTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+<repositories>
+		<repository>
+			<id>maven</id>
+			<name>Maven Repository Switchboard</name>
+			<layout>default</layout>
+			<url>http://repo1.maven.org/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>alibaba-opensource</id>
+			<name>alibaba-opensource</name>
+			<url>http://code.alibabatech.com/mvn/releases/</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>alibaba-opensource-snapshot</id>
+			<name>alibaba-opensource-snapshot</name>
+			<url>http://code.alibabatech.com/mvn/snapshots/</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 
 	<properties>
 		<java.version>1.6</java.version>
@@ -12,7 +35,7 @@
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<java.encoding>UTF-8</java.encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.springframework.version>4.0.3.RELEASE</org.springframework.version>
+		<org.springframework.version>4.0.2.RELEASE</org.springframework.version>
 		<org.mybatis.version>3.2.1</org.mybatis.version>
 		<org.mybatis.spring.version>1.2.0</org.mybatis.spring.version>
 		<dubbo.version>2.5.3</dubbo.version>
@@ -38,33 +61,11 @@
 		<autoconfig.plugin.version>1.2</autoconfig.plugin.version>
 		<slf4j.over.version>1.7.5</slf4j.over.version>
 		<commons-lang.version>2.5</commons-lang.version>
-		<bestpaycommons.version>1.0</bestpaycommons.version>
 		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${org.springframework.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>commons-logging</artifactId>
-					<groupId>commons-logging</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${org.springframework.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>commons-logging</artifactId>
-					<groupId>commons-logging</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
